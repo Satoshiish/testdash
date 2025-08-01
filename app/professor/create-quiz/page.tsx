@@ -141,7 +141,7 @@ export default function CreateQuiz() {
         return (
           <div className="space-y-4">
             <div className="space-y-2">
-              <Label>Question</Label>
+              <Label className="text-white">Question</Label>
               <Textarea
                 placeholder="Enter your question..."
                 value={currentQuestion.question}
@@ -150,7 +150,7 @@ export default function CreateQuiz() {
               />
             </div>
             <div className="space-y-2">
-              <Label>Options</Label>
+              <Label className="text-white">Options</Label>
               {currentQuestion.options.map((option, index) => (
                 <div key={index} className="flex items-center space-x-2">
                   <Input
@@ -199,7 +199,7 @@ export default function CreateQuiz() {
         return (
           <div className="space-y-4">
             <div className="space-y-2">
-              <Label>Question</Label>
+              <Label className="text-white">Question</Label>
               <Textarea
                 placeholder="Enter your true/false question..."
                 value={currentQuestion.question}
@@ -208,7 +208,7 @@ export default function CreateQuiz() {
               />
             </div>
             <div className="space-y-2">
-              <Label>Correct Answer</Label>
+              <Label className="text-white">Correct Answer</Label>
               <Select
                 value={currentQuestion.correctAnswer.toString()}
                 onValueChange={(value) => updateCurrentQuestion("correctAnswer", Number.parseInt(value))}
@@ -229,7 +229,7 @@ export default function CreateQuiz() {
         return (
           <div className="space-y-4">
             <div className="space-y-2">
-              <Label>Question</Label>
+              <Label className="text-white">Question</Label>
               <Textarea
                 placeholder="Enter your question..."
                 value={currentQuestion.question}
@@ -238,12 +238,12 @@ export default function CreateQuiz() {
               />
             </div>
             <div className="space-y-2">
-              <Label>Sample Answer (for grading reference)</Label>
+              <Label className="text-white">Sample Answer (for grading reference)</Label>
               <Textarea
                 placeholder="Enter a sample correct answer..."
                 value={currentQuestion.correctAnswer}
                 onChange={(e) => updateCurrentQuestion("correctAnswer", e.target.value)}
-                className="bg-gray-700 border-gray-600"
+                className="bg-gray-700 border-gray-600 text-white"
               />
             </div>
           </div>
@@ -253,12 +253,12 @@ export default function CreateQuiz() {
         return (
           <div className="space-y-4">
             <div className="space-y-2">
-              <Label>Question</Label>
+              <Label className="text-white">Question</Label>
               <Textarea
                 placeholder="Enter your essay question..."
                 value={currentQuestion.question}
                 onChange={(e) => updateCurrentQuestion("question", e.target.value)}
-                className="bg-gray-700 border-gray-600"
+                className="bg-gray-700 border-gray-600 text-white"
                 rows={3}
               />
             </div>
@@ -279,7 +279,7 @@ export default function CreateQuiz() {
         return (
           <div className="space-y-4">
             <div className="space-y-2">
-              <Label>Question (use _____ for blanks)</Label>
+              <Label className="text-white">Question (use _____ for blanks)</Label>
               <Textarea
                 placeholder="The capital of France is _____."
                 value={currentQuestion.question}
@@ -288,7 +288,7 @@ export default function CreateQuiz() {
               />
             </div>
             <div className="space-y-2">
-              <Label>Correct Answers (comma separated)</Label>
+              <Label className="text-white">Correct Answers (comma separated)</Label>
               <Input
                 placeholder="Paris, paris"
                 value={currentQuestion.correctAnswer}
@@ -303,7 +303,7 @@ export default function CreateQuiz() {
         return (
           <div className="space-y-4">
             <div className="space-y-2">
-              <Label>Question</Label>
+              <Label className="text-white">Question</Label>
               <Textarea
                 placeholder="Match the following items..."
                 value={currentQuestion.question}
@@ -313,7 +313,7 @@ export default function CreateQuiz() {
             </div>
             <div className="grid grid-cols-2 gap-4">
               <div className="space-y-2">
-                <Label>Left Column</Label>
+                <Label className="text-white">Left Column</Label>
                 {currentQuestion.options
                   .slice(0, Math.ceil(currentQuestion.options.length / 2))
                   .map((option, index) => (
@@ -327,7 +327,7 @@ export default function CreateQuiz() {
                   ))}
               </div>
               <div className="space-y-2">
-                <Label>Right Column</Label>
+                <Label className="text-white">Right Column</Label>
                 {currentQuestion.options.slice(Math.ceil(currentQuestion.options.length / 2)).map((option, index) => {
                   const actualIndex = index + Math.ceil(currentQuestion.options.length / 2)
                   return (
