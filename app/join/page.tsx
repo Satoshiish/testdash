@@ -46,7 +46,7 @@ export default function JoinPage() {
             <div className="w-16 h-16 bg-gradient-to-r from-orange-500 to-red-500 rounded-full mx-auto mb-4 flex items-center justify-center">
               <UserPlus className="h-8 w-8 text-white" />
             </div>
-            <CardTitle className="text-2xl text-white">Join EduPlatform</CardTitle>
+            <CardTitle className="text-2xl text-white">Join TestDash</CardTitle>
             <p className="text-gray-400">Create your account and start learning</p>
           </CardHeader>
           <CardContent>
