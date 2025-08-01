@@ -579,7 +579,7 @@ export default function StudentDashboard() {
               <CardContent className="p-6">
                 <div className="flex items-center justify-between">
                   <div>
-                    <p className="text-gray-400 text-sm">Active Courses</p>
+                    <p className="text-orange-500 text-sm">Active Courses</p>
                     <p className="text-2xl font-bold text-white">4</p>
                   </div>
                   <BookOpen className="h-8 w-8 text-orange-500" />
@@ -590,7 +590,7 @@ export default function StudentDashboard() {
               <CardContent className="p-6">
                 <div className="flex items-center justify-between">
                   <div>
-                    <p className="text-gray-400 text-sm">Hours Studied</p>
+                    <p className="text-orange-500 text-sm">Hours Studied</p>
                     <p className="text-2xl font-bold text-white">127</p>
                   </div>
                   <Clock className="h-8 w-8 text-blue-500" />
@@ -601,7 +601,7 @@ export default function StudentDashboard() {
               <CardContent className="p-6">
                 <div className="flex items-center justify-between">
                   <div>
-                    <p className="text-gray-400 text-sm">Assignments Due</p>
+                    <p className="text-orange-500 text-sm">Assignments Due</p>
                     <p className="text-2xl font-bold text-white">3</p>
                   </div>
                   <Calendar className="h-8 w-8 text-red-500" />
@@ -612,7 +612,7 @@ export default function StudentDashboard() {
               <CardContent className="p-6">
                 <div className="flex items-center justify-between">
                   <div>
-                    <p className="text-gray-400 text-sm">Achievements</p>
+                    <p className="text-orange-500 text-sm">Achievements</p>
                     <p className="text-2xl font-bold text-white">12</p>
                   </div>
                   <Trophy className="h-8 w-8 text-yellow-500" />
@@ -676,7 +676,7 @@ export default function StudentDashboard() {
                   <div key={course.id} className="p-4 bg-gray-700 rounded-lg">
                     <div className="flex justify-between items-start mb-2">
                       <div>
-                        <h3 className="font-semibold text-white">{course.name}</h3>
+                        <h3 className="font-semibold text-orange-500">{course.name}</h3>
                         <p className="text-gray-400 text-sm">
                           {course.code} • {course.instructor}
                         </p>
@@ -761,7 +761,7 @@ export default function StudentDashboard() {
                   <div key={assignment.id} className="p-4 bg-gray-700 rounded-lg border-l-4 border-orange-500">
                     <div className="flex justify-between items-start mb-2">
                       <div className="flex-1">
-                        <h3 className="font-semibold text-white mb-1">{assignment.title}</h3>
+                        <h3 className="font-semibold text-orange-500 mb-1">{assignment.title}</h3>
                         <p className="text-gray-400 text-sm mb-2">{assignment.course}</p>
                         <div className="flex items-center space-x-3 text-sm">
                           <div className="flex items-center space-x-1">

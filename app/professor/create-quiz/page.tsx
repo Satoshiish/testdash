@@ -186,7 +186,7 @@ export default function CreateQuiz() {
                 variant="outline"
                 size="sm"
                 onClick={addOption}
-                className="border-gray-600 bg-transparent"
+                className="border-gray-600 bg-transparent text-white"
               >
                 <Plus className="h-4 w-4 mr-2" />
                 Add Option
@@ -213,7 +213,7 @@ export default function CreateQuiz() {
                 value={currentQuestion.correctAnswer.toString()}
                 onValueChange={(value) => updateCurrentQuestion("correctAnswer", Number.parseInt(value))}
               >
-                <SelectTrigger className="bg-gray-700 border-gray-600">
+                <SelectTrigger className="bg-gray-700 border-gray-600 text-white">
                   <SelectValue />
                 </SelectTrigger>
                 <SelectContent>
@@ -268,7 +268,7 @@ export default function CreateQuiz() {
                 placeholder="Enter grading criteria..."
                 value={currentQuestion.correctAnswer}
                 onChange={(e) => updateCurrentQuestion("correctAnswer", e.target.value)}
-                className="bg-gray-700 border-gray-600"
+                className="bg-gray-700 border-gray-600 text-white"
                 rows={3}
               />
             </div>
@@ -293,7 +293,7 @@ export default function CreateQuiz() {
                 placeholder="Paris, paris"
                 value={currentQuestion.correctAnswer}
                 onChange={(e) => updateCurrentQuestion("correctAnswer", e.target.value)}
-                className="bg-gray-700 border-gray-600"
+                className="bg-gray-700 border-gray-600 text-white"
               />
             </div>
           </div>
@@ -308,7 +308,7 @@ export default function CreateQuiz() {
                 placeholder="Match the following items..."
                 value={currentQuestion.question}
                 onChange={(e) => updateCurrentQuestion("question", e.target.value)}
-                className="bg-gray-700 border-gray-600"
+                className="bg-gray-700 border-gray-600 text-white"
               />
             </div>
             <div className="grid grid-cols-2 gap-4">
@@ -322,7 +322,7 @@ export default function CreateQuiz() {
                       placeholder={`Item ${index + 1}`}
                       value={option}
                       onChange={(e) => updateOption(index, e.target.value)}
-                      className="bg-gray-700 border-gray-600"
+                      className="bg-gray-700 border-gray-600 text-white"
                     />
                   ))}
               </div>
@@ -336,7 +336,7 @@ export default function CreateQuiz() {
                       placeholder={`Match ${index + 1}`}
                       value={option}
                       onChange={(e) => updateOption(actualIndex, e.target.value)}
-                      className="bg-gray-700 border-gray-600"
+                      className="bg-gray-700 border-gray-600 text-white"
                     />
                   )
                 })}
