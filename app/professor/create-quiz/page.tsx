@@ -692,7 +692,7 @@ export default function CreateQuiz() {
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="space-y-2">
-                  <Label>Quiz Title</Label>
+                  <Label className="text-white">Quiz Title</Label>
                   <Input
                     placeholder="Enter quiz title..."
                     value={quiz.title}
