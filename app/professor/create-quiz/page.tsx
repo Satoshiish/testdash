@@ -697,23 +697,23 @@ export default function CreateQuiz() {
                     placeholder="Enter quiz title..."
                     value={quiz.title}
                     onChange={(e) => setQuiz({ ...quiz, title: e.target.value })}
-                    className="bg-gray-700 border-gray-600"
+                    className="bg-gray-700 border-gray-600 text-white"
                   />
                 </div>
                 <div className="space-y-2">
-                  <Label>Description</Label>
+                  <Label className="text-white">Description</Label>
                   <Textarea
                     placeholder="Quiz description..."
                     value={quiz.description}
                     onChange={(e) => setQuiz({ ...quiz, description: e.target.value })}
-                    className="bg-gray-700 border-gray-600"
+                    className="bg-gray-700 border-gray-600 text-white"
                     rows={3}
                   />
                 </div>
                 <div className="space-y-2">
-                  <Label>Course</Label>
+                  <Label className="text-white">Course</Label>
                   <Select value={quiz.course} onValueChange={(value) => setQuiz({ ...quiz, course: value })}>
-                    <SelectTrigger className="bg-gray-700 border-gray-600">
+                    <SelectTrigger className="bg-gray-700 border-gray-600 text-white">
                       <SelectValue placeholder="Select course" />
                     </SelectTrigger>
                     <SelectContent>
@@ -726,34 +726,34 @@ export default function CreateQuiz() {
                 </div>
                 <div className="grid grid-cols-2 gap-4">
                   <div className="space-y-2">
-                    <Label>Time Limit (minutes)</Label>
+                    <Label className="text-white">Time Limit (minutes)</Label>
                     <Input
                       type="number"
                       value={quiz.timeLimit}
                       onChange={(e) => setQuiz({ ...quiz, timeLimit: Number.parseInt(e.target.value) })}
-                      className="bg-gray-700 border-gray-600"
+                      className="bg-gray-700 border-gray-600 text-white"
                     />
                   </div>
                   <div className="space-y-2">
-                    <Label>Attempts Allowed</Label>
+                    <Label className="text-white">Attempts Allowed</Label>
                     <Input
                       type="number"
                       value={quiz.attempts}
                       onChange={(e) => setQuiz({ ...quiz, attempts: Number.parseInt(e.target.value) })}
-                      className="bg-gray-700 border-gray-600"
+                      className="bg-gray-700 border-gray-600 text-white"
                     />
                   </div>
                 </div>
                 <div className="space-y-4">
                   <div className="flex items-center justify-between">
-                    <Label>Shuffle Questions</Label>
+                    <Label className="text-white">Shuffle Questions</Label>
                     <Switch
                       checked={quiz.shuffleQuestions}
                       onCheckedChange={(checked) => setQuiz({ ...quiz, shuffleQuestions: checked })}
                     />
                   </div>
                   <div className="flex items-center justify-between">
-                    <Label>Show Results After Submission</Label>
+                    <Label className="text-white">Show Results After Submission</Label>
                     <Switch
                       checked={quiz.showResults}
                       onCheckedChange={(checked) => setQuiz({ ...quiz, showResults: checked })}
@@ -767,7 +767,7 @@ export default function CreateQuiz() {
                   <div className="space-y-4">
                     <div className="flex items-center justify-between">
                       <div>
-                        <Label>Voice Narration</Label>
+                        <Label className="text-white">Voice Narration</Label>
                         <p className="text-sm text-gray-400">Enable text-to-speech for questions</p>
                       </div>
                       <Switch
@@ -777,7 +777,7 @@ export default function CreateQuiz() {
                     </div>
                     <div className="flex items-center justify-between">
                       <div>
-                        <Label>Audio Support</Label>
+                        <Label className="text-white">Audio Support</Label>
                         <p className="text-sm text-gray-400">Allow audio questions and instructions</p>
                       </div>
                       <Switch
@@ -787,7 +787,7 @@ export default function CreateQuiz() {
                     </div>
                     <div className="flex items-center justify-between">
                       <div>
-                        <Label>High Contrast Mode</Label>
+                        <Label className="text-white">High Contrast Mode</Label>
                         <p className="text-sm text-gray-400">Enable high contrast for better visibility</p>
                       </div>
                       <Switch
@@ -796,9 +796,9 @@ export default function CreateQuiz() {
                       />
                     </div>
                     <div className="space-y-2">
-                      <Label>Font Size Options</Label>
+                      <Label className="text-white">Font Size Options</Label>
                       <Select value={quiz.fontSize} onValueChange={(value) => setQuiz({ ...quiz, fontSize: value })}>
-                        <SelectTrigger className="bg-gray-700 border-gray-600">
+                        <SelectTrigger className="bg-gray-700 border-gray-600 text-white">
                           <SelectValue />
                         </SelectTrigger>
                         <SelectContent>
@@ -811,7 +811,7 @@ export default function CreateQuiz() {
                     </div>
                     <div className="flex items-center justify-between">
                       <div>
-                        <Label>Color Blind Support</Label>
+                        <Label className="text-white">Color Blind Support</Label>
                         <p className="text-sm text-gray-400">Adjust colors for color blindness accessibility</p>
                       </div>
                       <Switch
@@ -821,7 +821,7 @@ export default function CreateQuiz() {
                     </div>
                     <div className="flex items-center justify-between">
                       <div>
-                        <Label>Extended Time Limit</Label>
+                        <Label className="text-white">Extended Time Limit</Label>
                         <p className="text-sm text-gray-400">Provide 1.5x time for students who need it</p>
                       </div>
                       <Switch
@@ -831,7 +831,7 @@ export default function CreateQuiz() {
                     </div>
                     <div className="flex items-center justify-between">
                       <div>
-                        <Label>Keyboard Navigation</Label>
+                        <Label className="text-white">Keyboard Navigation</Label>
                         <p className="text-sm text-gray-400">Enable full keyboard navigation support</p>
                       </div>
                       <Switch
@@ -841,7 +841,7 @@ export default function CreateQuiz() {
                     </div>
                     <div className="flex items-center justify-between">
                       <div>
-                        <Label>Simplified Language</Label>
+                        <Label className="text-white">Simplified Language</Label>
                         <p className="text-sm text-gray-400">Use clearer, simpler language in questions</p>
                       </div>
                       <Switch
@@ -851,7 +851,7 @@ export default function CreateQuiz() {
                     </div>
                     <div className="flex items-center justify-between">
                       <div>
-                        <Label>Reading Assistance</Label>
+                        <Label className="text-white">Reading Assistance</Label>
                         <p className="text-sm text-gray-400">Provide reading assistance and highlighting tools</p>
                       </div>
                       <Switch
@@ -861,7 +861,7 @@ export default function CreateQuiz() {
                     </div>
                     <div className="flex items-center justify-between">
                       <div>
-                        <Label>Screen Reader Compatibility</Label>
+                        <Label className="text-white">Screen Reader Compatibility</Label>
                         <p className="text-sm text-gray-400">Ensure full compatibility with screen readers</p>
                       </div>
                       <Switch
@@ -871,7 +871,7 @@ export default function CreateQuiz() {
                     </div>
                     <div className="flex items-center justify-between">
                       <div>
-                        <Label>Motor Impairment Support</Label>
+                        <Label className="text-white">Motor Impairment Support</Label>
                         <p className="text-sm text-gray-400">Larger click targets and reduced precision requirements</p>
                       </div>
                       <Switch
@@ -881,7 +881,7 @@ export default function CreateQuiz() {
                     </div>
                     <div className="flex items-center justify-between">
                       <div>
-                        <Label>Cognitive Load Reduction</Label>
+                        <Label className="text-white">Cognitive Load Reduction</Label>
                         <p className="text-sm text-gray-400">Minimize distractions and cognitive overload</p>
                       </div>
                       <Switch
@@ -947,12 +947,12 @@ export default function CreateQuiz() {
               <CardContent className="space-y-4">
                 <div className="grid grid-cols-2 gap-4">
                   <div className="space-y-2">
-                    <Label>Question Type</Label>
+                    <Label className="text-white">Question Type</Label>
                     <Select
                       value={currentQuestion.type}
                       onValueChange={(value) => updateCurrentQuestion("type", value)}
                     >
-                      <SelectTrigger className="bg-gray-700 border-gray-600">
+                      <SelectTrigger className="bg-gray-700 border-gray-600 text-white">
                         <SelectValue />
                       </SelectTrigger>
                       <SelectContent>
@@ -965,13 +965,13 @@ export default function CreateQuiz() {
                     </Select>
                   </div>
                   <div className="space-y-2">
-                    <Label>Points</Label>
+                    <Label className="text-white">Points</Label>
                     <Input
                       type="number"
                       min="1"
                       value={currentQuestion.points}
                       onChange={(e) => updateCurrentQuestion("points", Number.parseInt(e.target.value))}
-                      className="bg-gray-700 border-gray-600"
+                      className="bg-gray-700 border-gray-600 text-white"
                     />
                   </div>
                 </div>
@@ -979,7 +979,7 @@ export default function CreateQuiz() {
                 {renderQuestionEditor()}
 
                 <div className="space-y-2">
-                  <Label>Explanation (optional)</Label>
+                  <Label className="text-white">Explanation (optional)</Label>
                   <Textarea
                     placeholder="Provide an explanation for the correct answer..."
                     value={currentQuestion.explanation}
@@ -998,7 +998,7 @@ export default function CreateQuiz() {
 
             {/* Questions List */}
             {questions.length > 0 && (
-              <Card className="bg-gray-800 border-gray-700">
+              <Card className="bg-gray-800 border-gray-700 text-white">
                 <CardHeader>
                   <CardTitle className="text-white">Questions ({questions.length})</CardTitle>
                 </CardHeader>
