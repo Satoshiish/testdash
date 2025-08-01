@@ -114,7 +114,7 @@ export default function QuizDashboard() {
       {/* Header */}
       <header className="border-b border-gray-800">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <div className="text-2xl font-bold text-red-500">EduPlatform</div>
+          <div className="text-2xl font-bold text-red-500">TestDash</div>
           <nav className="hidden md:flex space-x-6">
             <Link href="/professor/home" className="hover:text-red-400 transition-colors">
               Dashboard
