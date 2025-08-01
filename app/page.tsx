@@ -120,7 +120,7 @@ export default function LandingPage() {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="border-orange-600 text-white hover:bg-orange-800 px-8 py-3 bg-transparent"
+                  className="border border-orange-600 text-white bg-transparent hover:bg-orange-700 hover:border-orange-700 px-6 py-2 rounded-md transition duration-200 ease-in-out"
                 >
                   Request Accommodation
                 </Button>
