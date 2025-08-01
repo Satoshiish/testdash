@@ -579,7 +579,7 @@ export default function StudentDashboard() {
               <CardContent className="p-6">
                 <div className="flex items-center justify-between">
                   <div>
-                    <p className="text-whitw text-sm">Active Courses</p>
+                    <p className="text-white text-sm">Active Courses</p>
                     <p className="text-2xl font-bold text-white">4</p>
                   </div>
                   <BookOpen className="h-8 w-8 text-orange-500" />
@@ -740,7 +740,7 @@ export default function StudentDashboard() {
                       </SelectContent>
                     </Select>
                     <Select value={filterBy} onValueChange={setFilterBy}>
-                      <SelectTrigger className="w-28 bg-gray-700 border-gray-600">
+                      <SelectTrigger className="w-28 bg-gray-700 border-gray-600 text-orange-500">
                         <Filter className="h-4 w-4 mr-2 text-orange-500" />
                         <SelectValue />
                       </SelectTrigger>
